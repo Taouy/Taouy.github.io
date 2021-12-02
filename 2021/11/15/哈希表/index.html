@@ -57,7 +57,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/photo.jpg" class="logo-img" alt="LOGO">
+                    <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="/medias/photo.jpg" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">TaouyBlog</span>
                 </a>
@@ -213,7 +213,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/photo.jpg" class="logo-img circle responsive-img">
+        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="/medias/photo.jpg" class="logo-img circle responsive-img">
         
         <div class="logo-name">TaouyBlog</div>
         <div class="logo-desc">
@@ -612,7 +612,7 @@
 <p><strong>庆哥：</strong> ，好吧好吧，我说的有点着急了 ，你就记住，哈希表在本质上就是个数组就ok了。</p>
 <p><strong>小白：</strong> 可是我还是像知道为啥啊？</p>
 <p><strong>庆哥：</strong> 别着急啊，咱慢慢来讲，另外在百科上有这么一个例子，可以帮助你更好的理解哈希表是个啥，它是这样说的：</p>
-<p><img src="https://pic4.zhimg.com/v2-ac80b003df9c03112fdc25e8b4613d9f_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic4.zhimg.com/v2-ac80b003df9c03112fdc25e8b4613d9f_b.jpg" alt="img"></p>
 <p>怎么样？看的懂嘛？</p>
 <p><strong>小白：</strong> 反正是有点模糊，这其中提到的函数关系啊，关键字啊，散列函数还有什么函数法则的有点迷迷糊糊的</p>
 <h3 id="哈希表的几个概念"><a href="#哈希表的几个概念" class="headerlink" title="哈希表的几个概念"></a><strong>哈希表的几个概念</strong></h3><h3 id="啥是散列函数"><a href="#啥是散列函数" class="headerlink" title="啥是散列函数"></a><strong>啥是散列函数</strong></h3><p><strong>庆哥：</strong> 确实，这都是哈希表中很重要的几个概念，那咱就先搞懂这几个概念吧，我用大白话给你说说这个例子。</p>
@@ -621,14 +621,14 @@
 <p><strong>庆哥：</strong> 确实可以，那么你有没有想过，如果这个王二是在最后几页，那你去岂不是前面几页都白找了，有没有更快的方式呢？</p>
 <p><strong>小白：</strong> 也是哦，那这样的话，是不是可以按照人名给分个类，比如按照首字母来排序，就abcd那样的顺序，这样根据王二我就知道去找w这些，这样不久快很多了</p>
 <p><strong>庆哥：</strong> 的确，我们可以按照人名的首字母去弄一个表格，比如像这样：</p>
-<p><img src="https://pic3.zhimg.com/v2-2c9ccefe1229c947258ee35dd129883e_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic3.zhimg.com/v2-2c9ccefe1229c947258ee35dd129883e_b.jpg" alt="img"></p>
 <p>你看，假如现在我让你去帮我找王二的手机号，你一下子就能找到，不用再挨个的去查找了，这效率就高的多了，那么现在重点来了，人家本来叫王二，你为啥用一个w来标记人家呢？让你找王二为啥你不直接找王二而是去找w呢？</p>
 <p><strong>小白：</strong> 这个？ ，用w可以更快速的去定位到王二啊</p>
 <p><strong>庆哥：</strong> 说的很对，我们取姓名的首字母作为一个标志，就可以很快的找到以这个字母开头的人名了，那么王二也就能更快的被我们找到，我们也不用再费力气去找什么张二和李二的，因为人家的名字首字母都不是w。</p>
 <p><strong>小白：</strong> 那必须啊，这个方法好吧</p>
 <p><strong>庆哥：</strong> 对对对，你说到点子上了，那就是方法二字，这里我们就是采用一种方法，什么方法呢？那就是取姓名的首字母做一个排序，那么这是不是就是通过一些特定的方法去得到一个特定的值，比如这里取人名的首字母，那么如果是放到数学中，是不是就是类似一个函数似的，给你一个值，经过某些加工得到另外一个值，就像这里的给你个人名，经过些许加工我们拿到首字母，那么这个函数或者是这个方法在哈希表中就叫做散列函数，其中规定的一些操作就叫做函数法则，这下你知道什么是散列函数了吧</p>
 <p><strong>小白：</strong> 嗯呢，这下真的是很清楚了，说白了，不就是给我一个值，经过捯饬一下，变成另外一个值吗？画个图的话就是这个样子：</p>
-<p><img src="https://pic1.zhimg.com/v2-1770dccf077a2d8542592e610e014db8_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic1.zhimg.com/v2-1770dccf077a2d8542592e610e014db8_b.jpg" alt="img"></p>
 <p>哈哈，是不是这样？</p>
 <p><strong>庆哥：</strong> 简单来说就是这样滴 ，咋样，这下知道什么是散列函数了吧？</p>
 <h3 id="关键值key是啥？"><a href="#关键值key是啥？" class="headerlink" title="关键值key是啥？"></a><strong>关键值key是啥？</strong></h3><p><strong>小白：</strong> 这下知道了，很清楚 ，那这个关键字key是个啥玩意？</p>
@@ -641,10 +641,10 @@
 <p><strong>庆哥：</strong> 不着急，咱们继续来探究哈希表。</p>
 <h3 id="再探哈希表"><a href="#再探哈希表" class="headerlink" title="再探哈希表"></a><strong>再探哈希表</strong></h3><p><strong>庆哥：</strong> 我们在之前已经知道了哈希表的本质其实是个数组，数组有啥特点啊？</p>
 <p><strong>小白：</strong> 数组嘛，那就是下表从0开始啊，连续的，直接通过下标访问，比如下面这样：</p>
-<p><img src="https://pic2.zhimg.com/v2-342588e81e07962badeeff5a24c9e30d_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic2.zhimg.com/v2-342588e81e07962badeeff5a24c9e30d_b.jpg" alt="img"></p>
 <p>有一个数组a，我们可以直接通过a[1]的形式来访问到数值7，所以查询效率很高。</p>
 <p><strong>庆哥：</strong> 完全正确，那么哈希表本质上是个数组，那它跟这个类似吗？我们来再深入探究一下，首先看个图：</p>
-<p><img src="https://pic1.zhimg.com/v2-1fca2ca6fd75ee042a0d0c813f17ea24_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic1.zhimg.com/v2-1fca2ca6fd75ee042a0d0c813f17ea24_b.jpg" alt="img"></p>
 <p>这张图可是信息量很大啊，你看出来个啥了嘛？</p>
 <p><strong>小白：</strong> 这个？我看到了哈希函数，这是啥？它跟散列函数有啥区别啊？还有Entry是个什么鬼 ，还有键值对 ，蒙圈啊</p>
 <h3 id="哈希函数"><a href="#哈希函数" class="headerlink" title="哈希函数"></a><strong>哈希函数</strong></h3><p><strong>庆哥：</strong> 别蒙圈啊，我来仔细跟你说说，其实这个哈希函数就是我们之前说的散列函数，为啥嘞？这就跟哈希表也叫做散列表一样啊，你叫作散列表的时候有个散列函数，那你叫哈希表的时候，也得有个哈希函数啊，这样才公平嘛 ，咋样，知道了吧？</p>
@@ -653,7 +653,7 @@
 <p>咋样，这块明白了嘛？</p>
 <p><strong>小白：</strong> 嗯嗯，明白的，庆哥继续！</p>
 <p><strong>庆哥：</strong> 那好，我们继续，键值对说的简单点就是有一个key和一个value对应着，比如这张图里的学生信息：</p>
-<p><img src="https://pic4.zhimg.com/v2-ba0818a9989a4c925fa346da1ccd7b7b_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic4.zhimg.com/v2-ba0818a9989a4c925fa346da1ccd7b7b_b.jpg" alt="img"></p>
 <p>学生的学号和姓名就是一个键值对啊，根据这个学号就能找到这个学生的姓名，那啥是Entry嘞，我们都知道键值对，在很多语言中也许都有键值对，说白了就是个大众脸啊，咋弄，在咱jdk中可不能那么俗气，不能再叫键值对了，叫啥嘞，那就叫Entry吧</p>
 <p>咋样，知道啥是键值对和Entry了吧！</p>
 <p><strong>小白：</strong> 必须滴啊，讲的那么生动 ，这张图感觉远不止如此啊，庆哥继续啊</p>
@@ -664,20 +664,20 @@
 <p>现在我们就成功把这个Entry放到了哈希表中了，怎么样，这块听懂了嘛？</p>
 <p><strong>小白：</strong> 嗯嗯，听懂了，不过看到这里我产生了一个疑问，那就是这个哈希函数，是不是有一个特定的加工过程，比如可以经过某种计算把101011转换成1，那么有没有可能其他的学号经过哈希函数的计算也得出1呢？那这个时候是不是就撞衫啦</p>
 <h3 id="哈希冲突"><a href="#哈希冲突" class="headerlink" title="哈希冲突"></a><strong>哈希冲突</strong></h3><p><strong>庆哥：</strong> 的确，你分析得很正确，我们再来看下面这张图：</p>
-<p><img src="https://pic4.zhimg.com/v2-406307009ebdcca42a3b7481780d8bef_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic4.zhimg.com/v2-406307009ebdcca42a3b7481780d8bef_b.jpg" alt="img"></p>
 <p>你说的这种情况就像图中展示的那样，学号为102011的李四，他的学号经过哈希函数的计算也得出了1，那么也要放到数组中为1的位置，可是这个位置之前已经被张三占了啊，这怎么办？这种情况就是哈希冲突或者也叫哈希碰撞。</p>
 <p>既然出现了这情况，不能不管李四啊，总得给他找个位置啊，怎么找呢？</p>
 <p><strong>小白：</strong> 我猜肯定有什么方法可以给李四找位置</p>
 <h3 id="处理哈希冲突"><a href="#处理哈希冲突" class="headerlink" title="处理哈希冲突"></a><strong>处理哈希冲突</strong></h3><p><strong>庆哥：</strong> 那必须滴啊 ，有什么方法呢？其实关于哈希冲突的解决办法有好几种嘞，但是我这里只介绍两种主要的方法，一个是开放寻址法，一个是拉链法。</p>
 <p>那什么是开放寻址法呢？我们继续来看图：</p>
-<p><img src="https://pic2.zhimg.com/v2-8976728104f82a492592bcf330f984d5_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic2.zhimg.com/v2-8976728104f82a492592bcf330f984d5_b.jpg" alt="img"></p>
 <p>我觉得看图就足以说明问题了，这里所说的开放寻址法其实简单来说就是，既然位置被占了，那就另外再找个位置不就得了，怎么找其他的位置呢？这里其实也有很多的实现，我们说个最基本的就是既然当前位置被占用了，我们就看看该位置的后一个位置是否可用，也就是1的位置被占用了，我们就看看2的位置，如果没有被占用，那就放到这里呗，当然，也有可能2的位置也被占用了，那咱就继续往下找，看看3的位置，一次类推，直到找到空位置。</p>
 <p>对了，Java中的ThreadLocal就是利用了开放寻址法。</p>
 <p><strong>小白：</strong> 啥是ThreadLocal啊</p>
 <p><strong>庆哥：</strong> 咋滴，你不知道啊，没事，给你一篇文章，看了包装你再也不学ThreadLocal了，因为看完这篇，你就再也忘不掉啦，链接直达，走起：<a href="https://link.zhihu.com/?target=http://mp.weixin.qq.com/s?__biz=MzU0NjA4MDg0Ng==&amp;mid=2247485921&amp;idx=1&amp;sn=26b90af96e1cb26c8c44da82a931b467&amp;chksm=fb6258c0cc15d1d6774d14c8b575b87baabaddb0acb71558d9f175c7f361d48beec36fde6eb0&amp;scene=21%23wechat_redirect">再也不学ThreadLocal了，看这一篇就忘不掉了！</a><a href="https://link.zhihu.com/?target=http://mp.weixin.qq.com/s?__biz=MzU0NjA4MDg0Ng==&amp;mid=2247485921&amp;idx=1&amp;sn=26b90af96e1cb26c8c44da82a931b467&amp;chksm=fb6258c0cc15d1d6774d14c8b575b87baabaddb0acb71558d9f175c7f361d48beec36fde6eb0&amp;scene=21%23wechat_redirect">（万字总结）</a></p>
 <p><strong>小白：</strong> 嗯嗯，我会好好看看的。那什么是拉链法啊？</p>
 <p><strong>庆哥：</strong> 拉链法也是比较常用的，像之前你说的HashMap就是使用了这种方法，那这个方法是怎么个回事呢？我们继续来看图：</p>
-<p><img src="https://pic3.zhimg.com/v2-2abff58382590a9d9f0578e918b44a2a_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic3.zhimg.com/v2-2abff58382590a9d9f0578e918b44a2a_b.jpg" alt="img"></p>
 <p>之前说的开放寻址法采用的方式是在数组上另外找个新位置，而拉链法则不同，还是在该位置，可是，该位置被占用了咋整，总不能打一架，谁赢是谁的吧 ，当然不是这样，这里采用的是链表，什么意思呢？就像图中所示，现在张三和李四都要放在1找个位置上，但是张三先来的，已经占了这个位置，待在了这个位置上了，那李四呢？解决办法就是链表，这时候这个1的位置存放的不单单是之前的那个Entry了，此时的Entry还额外的保存了一个next指针，这个指针指向数组外的另外一个位置，将李四安排在这里，然后张三那个Entry中的next指针就指向李四的这个位置，也就是保存的这个位置的内存地址，如果还有冲突，那就把又冲突的那个Entry放在一个新位置上，然后李四的Entry中的next指向它，这样就形成了一个链表。</p>
 <p>好啦，这就是拉链法，咋样，明白不</p>
 <p><strong>小白：</strong> 信息量不少啊，好在庆哥讲的比较清楚，明白啦</p>
@@ -697,7 +697,7 @@
 <p><strong>庆哥：</strong> 因为数组扩大了，所以一般哈希函数也会有变化，这里的Hash也就是把之前的数据通过新的哈希函数计算出新的位置来存放。</p>
 <p><strong>小白：</strong> 嗯嗯，原来是这么回事啊，懂了，对了，那哈希表的数据读取怎么操作的啊？</p>
 <h3 id="哈希表如何读取数据"><a href="#哈希表如何读取数据" class="headerlink" title="哈希表如何读取数据"></a><strong>哈希表如何读取数据</strong></h3><p><strong>庆哥：</strong> 要知道这个读取操作，我们还来看这个图：</p>
-<p><img src="https://pic2.zhimg.com/v2-213d79309410e8add662c861f45fe5f5_b.jpg" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic2.zhimg.com/v2-213d79309410e8add662c861f45fe5f5_b.jpg" alt="img"></p>
 <p>比如我们现在要通过学号102011来查找学生的姓名，怎么操作呢？我们首先通过学号利用哈希函数得出位置1，然后我们就去位置1拿数据啊，拿到这个Entry之后我们得看看这个Entry的key是不是我们的学号102011，一看是101011，什么鬼，一边去，这不是我们要的key啊，然后根据这个Entry的next知道下一给位置，在比较key，好成功找到李四。</p>
 <p><strong>小白：</strong> 哦哦，原来是这么回事啊，那对于开放寻址那种是不是也是这个思路，先确定到这个位置，然后再看这个位置上的key是不是我们要的，如过不是那就看看下一个位置的。</p>
 <p><strong>庆哥：</strong> 可以的，完全正确，好了现在我们对哈希表的讲解已经差不多了，那么你觉得对于哈希表而言，什么是核心呢？</p>
@@ -706,7 +706,7 @@
 <p><strong>小白：</strong> 哈哈 ，那设计哈希函数有什么方法吗？</p>
 <p><strong>庆哥：</strong> 必须有啊，比如有直接定址法，数字分析法，折叠法，随机数法和除留余数法等等，要不要继续讲啊</p>
 <p><strong>小白：</strong> 我去 ，还是不要了吧，消化不了啊，这次先到这吧，谢谢庆哥</p>
-<p><a href="https://link.zhihu.com/?target=https://blog.csdn.net/chengxuyuan9527/article/details/114029306">30 张Java 的思维导图，全面梳理构建 Java 的知识体系blog.csdn.net/chengxuyuan9527/article/details/114029306<img src="https://pic4.zhimg.com/v2-d64f6560723634a2220a445257033f6b_180x120.jpg" alt="img"></a></p>
+<p><a href="https://link.zhihu.com/?target=https://blog.csdn.net/chengxuyuan9527/article/details/114029306">30 张Java 的思维导图，全面梳理构建 Java 的知识体系blog.csdn.net/chengxuyuan9527/article/details/114029306<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://pic4.zhimg.com/v2-d64f6560723634a2220a445257033f6b_180x120.jpg" alt="img"></a></p>
 <blockquote>
 <p>作者：庆哥小白<br>来源：编码之外<br>链接：<a href="https://link.zhihu.com/?target=https://url.cn/58VT6fd">https://url.cn/58VT6fd</a></p>
 </blockquote>
@@ -905,10 +905,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1273,7 +1273,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/03.jpg" class="responsive-img" alt="我的第一篇博客">
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/03.jpg" class="responsive-img" alt="我的第一篇博客">
                         
                         <span class="card-title">我的第一篇博客</span>
                     </div>
@@ -1310,7 +1310,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/01.jpg" class="responsive-img" alt="Hello World">
+                        <img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/01.jpg" class="responsive-img" alt="Hello World">
                         
                         <span class="card-title">Hello World</span>
                     </div>
