@@ -40,7 +40,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
+/*
 h1 {
     margin: 48px 0 22px -5px;
     font-size: 2.0rem;
@@ -81,6 +81,48 @@ h6 {
     font-size: 1.1rem;
     line-height: 1.1rem;
 }
+*/
+/*Taouy 2021.12.02 目录样式修改  */
+h1 {
+    margin: 38px 0 22px -5px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 2.0rem;
+}
+
+h2 {
+    margin: 32px 0 18px -5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+
+h3 {
+    margin: 28px 0 15px -4px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+}
+
+h4 {
+    margin: 24px 0 12px -4px;
+    font-size: 1.45rem;
+    font-weight: bold;
+    line-height: 1.45rem;
+}
+
+h5 {
+    margin: 20px 0 8px -4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+
+h6 {
+    margin: 16px 0 4px -4px;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
 
 p {
     font-size: 1rem;
@@ -99,13 +141,22 @@ blockquote {
     color: #666;
     background-color: rgba(66, 185, 131, .1);
 }
-
+/*
 pre {
     padding: 2rem 1rem 1rem 3rem !important;
     border-radius: 0.35rem;
     tab-size: 4;
 }
-
+*/
+/*修改一下才能正确显示行号,而不是一条竖线 Taouy 2021.12.02  */
+pre {
+    padding: 1.5rem 1.5rem 1.5rem 3.3rem !important;
+    margin: 1rem 0 !important;
+    background: #272822;
+    overflow: auto;
+    border-radius: 0.35rem;
+    tab-size: 4;
+}
 .code-area::after {
     content: " ";
     position: absolute;
@@ -243,6 +294,8 @@ mark {
 /* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */
 .bg-color {
     background-image: linear-gradient(to right, #2558FF 0%, #0f9d58 100%);
+	 opacity: 0.85;   /* 透明度*/
+   
 }
 /*如果想去掉banner图的颜色渐变效果，请将以下的css属性注释掉或者删除掉即可*/
 @-webkit-keyframes rainbow {
@@ -320,20 +373,21 @@ header .side-nav .mobile-head {
 }
 
 header .side-nav .mobile-head img {
-    margin-top: 30px;
+	margin-top: 15px; /* 调整移动端头像位置，原值 30px; */
     width: 75px;
     height: 75px;
 }
 
 header .side-nav .mobile-head .logo-name {
-    margin-top: -30px;
-    padding-left: 10px;
+	margin-top: -30px;
+    /*修改移动端侧边栏顶部没有图标时显示不全，改为0即可，原值-30px和上面img的magin对应*/
+    /* padding-left: 10px; */
     font-size: 1.5rem;
 }
 
 header .side-nav .mobile-head .logo-desc {
     margin-top: -10px;
-    padding-left: 10px;
+   /* padding-left: 10px;*/
     padding-bottom: 10px;
     font-size: 0.8rem;
     line-height: 1.3rem;
@@ -558,8 +612,9 @@ header .go-back i {
 }
 
 .bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
+    -webkit-animation: rainbow 30s infinite;
+    animation: rainbow 30s infinite;
+	/* 原值60s Taouy 2021.12.02*/ 
 }
 
 .bg-cover:before,
@@ -892,8 +947,10 @@ article a:hover {
 }
 
 article .card {
-    border-radius: 8px;
+    border-radius: 5px;
+    /*原值 8px*/
     overflow: hidden;
+    /* 解决文章卡片上方border-radius失效的bug, Taouy 2021.12.02 */
 }
 
 article .card-image {
